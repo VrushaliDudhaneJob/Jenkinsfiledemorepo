@@ -16,7 +16,7 @@ pipeline {
 
                 sh '''
                     rm -f /var/www/html/index.html
-sudo cp -r ./README.md ./index.html ./script.js ./style.css /var/www/html/
+cp -r ./README.md ./index.html ./script.js ./style.css /var/www/html/
                 '''
             }
         }
