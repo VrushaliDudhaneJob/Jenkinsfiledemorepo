@@ -15,7 +15,8 @@ pipeline {
                 echo 'Deploying application...'
 
                 sh '''
-                    sudo cp -r index.html style.css script.js /var/www/html/
+                    rm -f /var/www/html/index.html
+sudo cp -r ./README.md ./index.html ./script.js ./style.css /var/www/html/
                 '''
             }
         }
